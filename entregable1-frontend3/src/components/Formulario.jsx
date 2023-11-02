@@ -58,7 +58,7 @@ const Formulario = () =>
         </button>
         </form>
 
-        {card && (<Card nombre={nombre} cedula={cedula}/>)}
+        {card ? <Card nombre={nombre} cedula={cedula}/> : false}
         
 
     </>
@@ -68,14 +68,3 @@ const Formulario = () =>
 export default Formulario
 
 
-/*
-<div>
-            <Card 
-            nombre={nombre}
-            cedula={cedula}
-            />
-        </div>
-alert(`Ya te encuentras registrado para votar. Con el nombre:  ${nombre} y la cédula de ciudadanía: ${cedula}.`);}
-
-
-*/
